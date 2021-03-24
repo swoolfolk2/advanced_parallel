@@ -1,0 +1,45 @@
+--Washing cycle--
+SOFT = 0 = 75
+HARD = 1 = 100
+
+--Washing load--
+LITTLE = 0 = 0.75
+MEDIUM = 1 = 1
+A_LOT = 2 = 1.25
+
+--Washer's states--
+WASHING = 0
+FINISHED = 1 = 1
+
+--Child activities--
+RECEIVE = 0 = 2
+GO_TO_STORE = 1 = 5
+GIVE = 2 = 2
+SIT_TO_EAT = 3 = 1
+
+--Child's state--
+IDLE = 0
+RECEVING = 1
+GOING_TO_STORE = 2
+IN_STORE = 3 = 3, 5
+RETURNING _FROM_STORE = 4
+GIVING = 5
+WAITING_ON_FOOD = 6
+
+--Stove's intensity--
+LOW = 0 = 50
+HIGH = 1 = 25
+
+--Stove's states--
+IDLE = 0
+COOKING = 1
+FINISHED = 2 = 1
+
+--MOM's states--
+WAITING_ON_WASHER = 0
+TELLING_CHILD = 1
+GIVING = 2
+WAITING_ON_CHILD = 3
+RECEVING = 4
+STOVE = 5
+SERVING_FOOD = 6
